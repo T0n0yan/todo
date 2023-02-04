@@ -1,0 +1,57 @@
+.popupContainer {
+  width: 100vw;
+  height:100%;
+  display: flex;
+  background-color: transparent;
+  background-clip: padding-box;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+  .popup {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    border: 1px solid yellow;
+    border-radius: 15px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    filter: brightness(100%);
+    box-shadow: 0 0 5px greenyellow, 0 0 10px yellowgreen, 0 0 15px yellow, 0 0 20px green, 0 0 25px green, 0 0 30px yellow, 0 0 35px red, 0 0 45px yellow, 0 0 55px yellowgreen , 0 0 65px green;    p {
+      font-family: "Kristen ITC";
+      font-size: 25px;
+      color: greenyellow;
+      font-weight: 900;
+      text-shadow: 0 0 5px black, 0 0 10px green, 0 0 15px yellow, 0 0 20px yellowgreen, 0 0 25px red, 0 0 30px yellow, 0 0 35px green, 0 0 45px yellow;
+
+    }
+
+    .buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+
+      button {
+        cursor: pointer;
+        color: green;
+        background-color: black;
+        box-shadow: 0 0 5px black, 0 0 10px white, 0 0 15px yellowgreen, 0 0 20px greenyellow, 0 0 25px red, 0 0 30px yellow, 0 0 35px green, 0 0 45px yellow;
+        font-family: Wingdings;
+        padding: 10px 20px;
+        font-size: 50px;
+      }
+    }
+  }
+}
+.disabled{
+  display: none;
+}

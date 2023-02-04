@@ -1,0 +1,81 @@
+.TodoContainer {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  .buttomsDiv {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Active {
+    font-size: 30px;
+    font-family: 'Kristen ITC';
+    text-shadow: 0 0 5px darkgreen, 0 0 10px red, 0 0 15px greenyellow, 0 0 20px black, 0 0 25px greenyellow, 0 0 30px yellow, 0 0 35px red, 0 0 45px yellow;
+    text-decoration: line-through 2px;
+    margin: 0 10px;
+  }
+
+  .Disable {
+    font-size: 30px;
+    font-family: 'Kristen ITC';
+    margin: 0 10px;
+    text-shadow: 0 0 5px black, 0 0 10px darkred, 0 0 15px darkred, 0 0 20px red, 0 0 30px red;
+  }
+
+  .deleteBottom {
+    cursor: pointer;
+    color: #ff2525;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 50px white;
+  }
+
+  .saveBottom {
+    cursor: pointer;
+    color: greenyellow;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: transparent;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    font-family: Wingdings;
+
+  }
+
+  .changedInput {
+    margin: 5px 20px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    filter: (10% black);
+    outline: none;
+    background-color: transparent;
+    box-shadow: 0 0 5px darkgreen, 0 0 10px red, 0 0 15px greenyellow, 0 0 20px black, 0 0 25px greenyellow, 0 0 30px yellow, 0 0 35px red, 0 0 45px yellow;
+    text-shadow: 0 0 5px darkgreen, 0 0 10px red, 0 0 15px greenyellow, 0 0 20px black, 0 0 25px greenyellow, 0 0 30px yellow, 0 0 35px red, 0 0 45px yellow;
+    font-size: 15px;
+    font-family: "Kristen ITC";
+    text-align: center;
+  }
+
+  .checkBox[type="checkbox"] { /* change "blue" browser chrome to yellow */
+    width: 25px;
+    height: 25px;
+    filter: invert(100) hue-rotate(18deg) brightness(1.7);
+  }
+}
